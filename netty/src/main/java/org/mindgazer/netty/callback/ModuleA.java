@@ -6,12 +6,16 @@ package org.mindgazer.netty.callback;
  */
 public class ModuleA {
 
+    public interface ModuleACallback {
+        void fireSomeOptions(String event);
+    }
+
     private ModuleACallback callback;
 
     public void inboundEvent() {
         System.out.println("event incoming");
-        // do something other jobs
-        callback.taskDown("some msg");
+        // some codes
+        callback.fireSomeOptions("some msg");
     }
 
     public void registerCallback(ModuleACallback callback) {
