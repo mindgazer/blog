@@ -1,0 +1,15 @@
+plugins {
+    id 'java'
+}
+
+group 'org.mindgazer'
+version '1.0.0'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+}
