@@ -10,9 +10,7 @@ public class ModuleA {
 
     public void inboundEvent() {
         System.out.println("event incoming");
-
         // do something other jobs
-
         callback.taskDown("some msg");
     }
 
