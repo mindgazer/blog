@@ -7,7 +7,7 @@ package org.mindgazer.netty.callback;
 public class ModuleB {
 
     public void watch(ModuleA moduleA) {
-        moduleA.registerCallback((event) -> {
+        moduleA.register((event) -> {
             // do something after the event processed
         });
     }
