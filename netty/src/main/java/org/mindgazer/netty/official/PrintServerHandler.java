@@ -3,6 +3,7 @@ package org.mindgazer.netty.official;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
+import io.netty.util.ReferenceCountUtil;
 
 /**
  * @author mindgazer
@@ -19,7 +20,7 @@ public class PrintServerHandler extends ChannelInboundHandlerAdapter {
                 System.out.flush();
             }
         } finally {
-//            ReferenceCountUtil.release(msg);
+            ReferenceCountUtil.release(msg);
         }
     }
 
