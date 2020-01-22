@@ -1,0 +1,13 @@
+此项目用于存放我分享的技术文章中涉及到的所有代码例子。
+
+----
+/netty
+    |--bio：blocking I/O例子
+        |--simple：最简单的BIO例子
+    |--nio：non-blocking I/O例子
+    |--netty：
+        |--simple：一个简单的netty的例子
+        |--official：netty官方文档贴出的示例
+        |--callback：一个回调的例子
+----
+
