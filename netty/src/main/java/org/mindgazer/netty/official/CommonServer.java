@@ -45,7 +45,6 @@ public class CommonServer {
                         @Override
                         public void initChannel(SocketChannel ch) throws Exception {
                             ch.pipeline().addLast(new PrintServerHandler());
-                            ch.pipeline().addLast(new EchoServerHandler());
                         }
                     })
                     // 该设置用于配置NioServerSocketChannel
